@@ -7,9 +7,7 @@ function uncompletedNotes(notes) {
     ret.push({
       id: note.id,
       description: note.description,
-      todos: note.todos.filter(todo => {
-        return !todo.done;
-      })
+      todos: note.todos.filter(todo => !todo.done)
     })
   });
 
